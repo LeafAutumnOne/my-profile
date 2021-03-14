@@ -1,0 +1,200 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url(images/background2.jpg);
+    font-family: 'courier';
+}
+
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+    padding-top: 15px;
+  }
+
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 65px 0px 50px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: darkgrey;
+    display: block;
+  }
+
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: lightpink;
+  }
+
+  /* Style the avatar box*/
+  .avatar{
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    padding: auto;
+    color: white;
+  }
+
+  /* Style the image*/
+  .avatar img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius:50%;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.15);
+  }
+
+  /* Style the main content */
+  .welcome {
+    margin-left: 235px; /* Same as the width of the sidenav */
+    padding: 200px 10px 25px 10px;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /*Style the about content*/
+  .about{
+    color: white;
+    padding: 300px 10px 10px 225px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*Style the projects content*/
+  .projects{
+    color: white;
+    padding: 300px 200px 10px 400px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*Style the caption*/
+  .caption{
+    padding-bottom: 25px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /*Style the projects & hobbies table*/
+  .table {
+    border-collapse: collapse;
+    border-spacing: 0 15px;
+  }
+
+  .table th{
+    border: 3px solid black;
+    padding: 5px;
+  }
+
+  .table tr {
+    border: 3px solid black;
+    padding: 5px;
+  }
+
+  .table td{
+    border: 3px solid black;
+    padding: 5px;
+  }
+
+  /*Style the hobbies content*/
+  .hobbies{
+    color: white;
+    padding: 200px 200px 10px 400px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hobbies ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .hobbies ol{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .hobbies a:hover{
+    color: lightpink;
+  }
+
+  .hobbies a, a:visited{
+    color: white;
+  }
+
+  /*Style the contact content*/
+  .contact{
+    color: white;
+    padding: 300px 10px 10px 225px;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .contact ul{
+    list-style: none;
+  }
+
+  .contact li{
+    display: inline;
+  }
+
+  .contact a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .contact a:hover{
+    color: lightpink;
+  }
+
+  /* Add media queries for small screens (when the height of the screen is less than Ypx, add a smaller padding and font-size) */
+
+  @media screen and (max-height: 960px) {
+    .sidebar {padding-top: 20px;}
+    .sidebar a {font-size: 23px;}
+    .welcome {width: 700px}
+    .about {width: 700px}
+    .projects {width: 700px}
+    .hobbies {width: 700px}
+    .contact {width: 700px}
+  }
+
+  @media screen and (max-height: 720px) {
+    .sidebar {padding-top: 17px;}
+    .sidebar a {font-size: 20px;}
+    .welcome {width: 500px}
+    .about {width: 500px}
+    .projects {width: 500px}
+    .hobbies {width: 500px}
+    .contact {width: 500px}
+  }
+
+  @media screen and (max-height: 540px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    .welcome {width: 300px}
+    .about {width: 300px}
+    .projects {width: 300px}
+    .hobbies {width: 300px}
+    .contact {width: 300px}
+  }
+
+
